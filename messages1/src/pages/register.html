@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task7 Register</title>
+  <link href="../css/app.css" rel="stylesheet"></head>
+<body>
+
+  <main class="main">
+    <div class="main_container">
+      <div class="main_left">
+        <img src="../img/square.png" alt="Square">
+      </div>
+      <div class="main_right">
+        <h3 class="main_right-title">Sign Up</h3>
+        <a href="http://localhost:8081" class="main_right-link">Existing member?</a>
+        <form class="main_form">
+          <input type="email" name="regEmail" id="regEmail" placeholder="Email..." class="main_form-input">
+          <input type="password" name="regPassword" id="regPassword" placeholder="Password..." class="main_form-input">
+          <input type="password" name="regConfirmPassword" id="regConfirmPassword" placeholder="Confirm Password..." class="main_form-input">
+          <p class="main_form-error" id="regError"></p>
+          <div class="main_form_bottom signupMain_form_bottom">
+            <input type="button" name="signup" id="signup" class="main_form-btn " value="Sign Up">
+            <div id="signupInputBlocker" class="signup-inputBlocker"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  <script type="text/javascript" src="../js/app.js"></script></body>
+</html>

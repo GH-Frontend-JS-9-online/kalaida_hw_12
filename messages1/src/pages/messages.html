@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Messages</title>
+  <link href="../css/app.css" rel="stylesheet"></head>
+<body>
+
+  <header class="messagesHeader">
+    <div class="messagesHeader_container">
+      <div class="messagesHeader_left">
+        <img src="../../assets/img/logo.png" alt="Logo">
+      </div>
+      <div class="messagesHeader_right">
+        <a href="#" class="messagesHeader_right-btn">Add <span> +</span></a>
+        <a href="#" class="messagesHeader_right-search"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <a href="#" class="messagesHeader_right-notifications"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+        <a href="#" class="messagesHeader_right-profile">
+          <div class="messagesHeader_right-profile-avatar"></div>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mainMessages">
+    <div class="mainMessages_sidebar">
+      <div class="mainMessages_sidebar_links">
+        <a href="#" class="mainMessages_sidebar-link"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="#" class="mainMessages_sidebar-link"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a href="#" class="mainMessages_sidebar-link"><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+        <a href="#" class="mainMessages_sidebar-linkActive"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="#" class="mainMessages_sidebar-link"><i class="fa fa-users" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="mainMessages_content">
+      <div class="mainMessages_bar">
+        <div class="mainMessages_bar_left">
+          <div class="mainMessages_bar_links">
+            <a href="#" class="mainMessages_bar-link"><i class="fa fa-inbox" aria-hidden="true"></i> Inbox</a>
+            <a href="#" class="mainMessages_bar-link"><i class="fa fa-paper-plane" aria-hidden="true"></i> Sent</a>
+            <a href="#" class="mainMessages_bar-link"><i class="fa fa-trash" aria-hidden="true"></i> Trash</a>
+          </div>
+        </div>
+        <div class="mainMessages_bar_right">
+          <form>
+            <label for="filterSelect" class="mainMessages_bar-filterText">Filter messages:</label>
+            <select name="filterSelect" id="filterSelect">
+              <option value="Date">Date</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="mainMessages_bottom">
+        <div class="conversations">
+
+        </div>
+        <div class="messaging">
+
+        </div>
+        <div class="aside">
+          <div id="asideUserAvatar"></div>
+          <p id="asideUserName"></p>
+          <p id="asideUserPost"></p>
+          <p id="asideUserDescription"></p>
+          <p class="aside-userList">Email</p>
+          <p id="asideUserEmail"></p>
+          <p class="aside-userList">Phone</p>
+          <div id="asideUserPhone"></div>
+          <p class="aside-userList">Address</p>
+          <p id="asideUserAddress"></p>
+          <p class="aside-userList">Organization</p>
+          <p id="asideUserOrganization"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="needLogin">
+    <a href="http://localhost:8081">Please login in your account!</a>
+  </div>
+
+  <script type="text/javascript" src="../js/app.js"></script></body>
+</html>

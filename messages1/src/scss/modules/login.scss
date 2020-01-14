@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  &_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &-loginText {
+    display: none;
+    font-size: 18px;
+    font-weight: 800;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    & i {
+      font-size: 22px;
+      padding-right: 5px;
+    }
+  }
+  &-loginTextLogin {
+    display: block;
+  }
+}
+
+.loginMain_form_bottom {
+  position: relative;
+}
+
+.login-inputBlocker {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  bottom: 25px;
+}
+
+.login-inputBlockerNo {
+  display: none;
+}

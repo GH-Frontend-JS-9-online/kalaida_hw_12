@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task 7 LogIn</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header_container">
+        <p id="loginAlert" class="header-loginText"> <i class="fa fa-check" aria-hidden="true"></i> You've successfully entered in your account!
+          <a href="http://localhost:8081/assets/pages/messages.html">Messages</a></p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main_container">
+      <div class="main_left">
+        <img src="assets/img/square.png" alt="Square">
+      </div>
+      <div class="main_right">
+        <h3 class="main_right-title">Log in</h3>
+        <a href="http://localhost:8081/assets/pages/register.html" class="main_right-link">Not a member?</a>
+        <form class="main_form">
+          <input type="email" name="email" id="email" placeholder="Email..." class="main_form-input">
+          <input type="password" name="password" id="password" placeholder="Password..." class="main_form-input">
+          <p class="main_form-error" id="loginError"></p>
+          <div class="main_form_bottom loginMain_form_bottom">
+            <input type="button" name="login" id="login" class="main_form-btn" value="Log in">
+            <div id="loginInputBlocker" class="login-inputBlocker"></div>
+            <a href="http://localhost:8081/assets/pages/reset1.html">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

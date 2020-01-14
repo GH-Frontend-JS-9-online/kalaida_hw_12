@@ -1,0 +1,56 @@
+.resetMain {
+  &_form {
+    &-input {
+      margin-bottom: 5px;
+    }
+    &-text {
+      font-size: 14px;
+      font-weight: 800;
+    }
+    &None {
+
+    }
+    &_bottom {
+      position: relative;
+    }
+  }
+  &_message {
+    margin-top: 0;
+    display: none;
+    &-text {
+      font-weight: 800;
+      font-size: 14px;
+      margin-top: 0;
+    }
+    &_bottom {
+      display: flex;
+      justify-content: center;
+    }
+    &-btn {
+      width: 80px;
+      height: 25px;
+      background: transparent;
+      font-weight: 800;
+      border: 2px solid #000;
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+    }
+  }
+}
+
+.reset1-inputBlocker {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  bottom: 5px;
+  &No {
+    display: none;
+  }
+}
+

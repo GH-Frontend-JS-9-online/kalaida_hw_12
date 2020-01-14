@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "name": "michelle",
+      "password": "mxXD7CseigSu3gRichfRKD#$h3ypPE3NeSz#i#BMlwZu/h0tlSBq9Y7Me86PkJeL1zm#9mpz2pSTaCqd3eou1Y9v",
+      "email": "michelle@geekhub.ck.ua",
+      "position": "UX/UI Designer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 557130354",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp",
+      "id": "ocltlx69yx2fcort"
+    },
+    {
+      "name": "jolene",
+      "password": "jLTptQZzodAmzpOtlg/RlGCfe70cLjAUnnGIJs4#e0kRyQKDHzIQUr/caKSEEImmrUNMI#1ndDF0Pc8KPK68f9rnaRRPw9KIssHhqSDestT2o6v91$AIrLdh",
+      "email": "jolene@geekhub.ck.ua",
+      "position": "Frontend Developer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 648042714",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp",
+      "id": "if061gnt3fvrrlie"
+    },
+    {
+      "name": "lyall",
+      "password": "lKfG#PskykLccY39aaP/NspKlXxHezo/lB3R$CD2GtLyTEZgHb#U1MlY26/oSh/W0bWuRa_51x1zCWIf3GTL2B0L",
+      "email": "lyall@geekhub.ck.ua",
+      "position": "Ruby Developer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 421764754",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp",
+      "id": "j7us3emq76l9ywde"
+    },
+    {
+      "name": "dominic",
+      "password": "dWObe/wZoaj12fcBmLWBJMpNij53jn#/nRFGj8WViSkepGU/cwvZJxrSl3EGE8MLouVA2mz#v/u9Ge4EetomwFp$iAyRtf7Rt2lx_kOz1bEarP$I",
+      "email": "dominic@geekhub.ck.ua",
+      "position": "Full-stack Developer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 815281484",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp",
+      "id": "v8r1awqnpa95k6pc"
+    },
+    {
+      "name": "alex",
+      "password": "d5k6RGMZisSH7J93xrcAAUgjlpM/AnxGoqyLgMpLvGC#Ezm7e/yh/NTDgzYI3NSOhlB4VRuc1y5xDIZB",
+      "email": "alex@geekhub.ck.ua",
+      "position": "QA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 805113305",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp",
+      "id": "fbjak6196xiylape"
+    },
+    {
+      "name": "vadimkalaida1",
+      "password": "twdGSVSIenwehtkcsFgMznmktRb2UqeCpkbL$5xAabbL5nf0sT5Kb$busORPk43u1FtsRW7#2J6lIozH",
+      "email": "vadimkalaida1@gmail.com",
+      "position": "Frontend Developer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 476135178",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp",
+      "id": "v0054428sj0nc4k6"
+    }
+  ],
+  "threads": [
+    {
+      "users": [
+        "5e130bfe9b610a8363b4b319",
+        "5e13095244e24582b460517c"
+      ],
+      "_id": "5e13343a5badff9ccfb36767",
+      "created_at": "2020-01-06T13:20:58.613Z",
+      "updated_at": "2020-01-06T13:20:58.613Z"
+    }
+  ],
+  "messages": [
+    {
+      "_id": "5e1335f89f86679d60d0897b",
+      "user": "5e130bfe9b610a8363b4b319",
+      "thread": "5e13343a5badff9ccfb36767",
+      "body": "Hello there! Can you say hello to me?",
+      "created_at": "2020-01-06T13:28:24.377Z"
+    },
+    {
+      "_id": "5e1338192ac80a9ed238a72d",
+      "user": "5e13095244e24582b460517c",
+      "thread": "5e13343a5badff9ccfb36767",
+      "body": "Hello there! Can you say hello to me?",
+      "created_at": "2020-01-06T13:37:29.153Z"
+    }
+  ]
+}

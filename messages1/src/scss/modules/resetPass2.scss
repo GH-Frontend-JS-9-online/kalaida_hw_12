@@ -1,0 +1,25 @@
+.reset2Main {
+  &_right {
+    &-text {
+      margin-top: 10px;
+      font-weight: 800;
+      display: none;
+    }
+  }
+}
+
+.reset2-inputBlocker {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  bottom: 5px;
+  &No {
+    display: none;
+  }
+}
+
+#resetMain2Form {
+  display: none;
+  position: relative;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 800px;
+  min-height: 700px;
+  margin: auto;
+  &_container {
+    width: 95%;
+    min-height: 700px;
+    margin: auto;
+    display: flex;
+  }
+  &_left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    & img {
+      width: 80%;
+    }
+  }
+  &_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-title {
+      font-size: 42px;
+      margin-bottom: 5px;
+    }
+    &-link {
+      text-decoration: underline;
+      color: blue;
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    &-input {
+      width: 75%;
+      height: 30px;
+      outline: none;
+      border: 2px solid #000;
+      font-weight: 800;
+      padding-left: 5px;
+      margin-bottom: 15px;
+      &::placeholder {
+        font-weight: 800;
+      }
+    }
+    &-error {
+      width: 75%;
+      font-size: 14px;
+      color: #ff0000;
+      font-weight: 800;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    &_bottom {
+      margin-top: 0;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & a {
+        text-decoration: underline;
+        color: blue;
+        font-weight: 800;
+        margin-top: 0;
+      }
+    }
+    &-btn {
+      width: 80px;
+      height: 25px;
+      background: transparent;
+      font-weight: 800;
+      border: 2px solid #000;
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  }
+}
