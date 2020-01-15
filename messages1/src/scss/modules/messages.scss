@@ -210,22 +210,184 @@
 }
 
 .conversations {
-  width: 30%;
+  width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   background: #2b2d3c;
-
+  &-btn {
+    width: 80%;
+    height: 51px;
+    border-radius: 5px;
+    background: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .24px;
+    color: #fff;
+    margin-bottom: 30px;
+    transition: .2s;
+    & span {
+      font-size: 24px;
+      padding-right: 10px;
+      color: rgba(255, 255, 255, .6);
+    }
+    &:hover {
+      background: #2DA2FF;
+    }
+    &:active {
+      background: #2196f3;
+    }
+  }
 }
 
 .messaging {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   background: #2f3242;
+  & form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+  }
+  &-input {
+    width: 95%;
+    height: 51px;
+    border-radius: 10px;
+    border: 1px solid rgba(156, 161, 178, 0.3);
+    background: #404359;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: .32px;
+    padding-left: 20px;
+    &::placeholder {
+      color: #9ca1b2;
+    }
+  }
+  &-inputBlocker {
+    width: 95%;
+    height: 51px;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    bottom: 0;
+  }
+  &_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-y: auto;
+    &_left {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &_comment {
+        margin-left: 25px;
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 90px;
+      }
+      &-avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #BBBBBB;
+      }
+      &_content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &-message {
+        max-width: 85%;
+        min-height: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #404359;
+        color: #fff;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: .32px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 25px;
+      }
+      &-date {
+        color: #9ca1b2;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: .42px;
+        margin-top: 0;
+        margin-left: 25px;
+      }
+    }
+    &_right {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      &_comment {
+        margin-right: 25px;
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+      }
+      &-avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #fff;
+      }
+      &_content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      &-message {
+        max-width: 85%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #2196f3;
+        color: #fff;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: .32px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 25px;
+      }
+      &-date {
+        color: #9ca1b2;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: .42px;
+        margin-top: 0;
+        margin-right: 25px;
+      }
+    }
+  }
 }
 
 .aside {
@@ -240,7 +402,7 @@
   #asideUserAvatar {
     width: 100px;
     height: 100px;
-    background: #fff;
+    background: #BBBBBB;
     border: none;
     border-radius: 50%;
     margin-top: 40px;
