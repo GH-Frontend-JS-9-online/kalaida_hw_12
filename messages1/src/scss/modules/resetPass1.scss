@@ -4,6 +4,7 @@
       margin-bottom: 5px;
     }
     &-text {
+      color: #fff;
       font-size: 14px;
       font-weight: 800;
     }
@@ -21,6 +22,7 @@
       font-weight: 800;
       font-size: 14px;
       margin-top: 0;
+      color: #fff;
     }
     &_bottom {
       display: flex;
@@ -28,17 +30,23 @@
     }
     &-btn {
       width: 80px;
-      height: 25px;
-      background: transparent;
+      height: 31px;
+      border-radius: 5px;
+      background: #2196f3;
+      font-size: 18px;
       font-weight: 800;
-      border: 2px solid #000;
+      letter-spacing: .24px;
+      color: #fff;
+      border: none;
       outline: none;
       cursor: pointer;
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #000;
+      transition: .2s;
+      &:hover {
+        background: #2DA2FF;
+      }
+      &:active {
+        background: #2196f3;
+      }
     }
   }
 }
@@ -46,7 +54,7 @@
 .reset1-inputBlocker {
   position: absolute;
   width: 100px;
-  height: 30px;
+  height: 40px;
   background: transparent;
   bottom: 5px;
   &No {
