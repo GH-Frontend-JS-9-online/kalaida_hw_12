@@ -124,6 +124,7 @@
 
       let myDate = new Date(),
         messageId = '',
+        friendMessageId = '',
         userId = sessionStorage.getItem('login_user_id'),
         messageThread = '';
 
@@ -154,17 +155,25 @@
       let friendSays = prompt('Your friend says: (0.01 - 3 seconds)'),
         friendSaysTime = Math.floor(Math.random() * 3001);
 
+      for(let i = 0; i < 18; i++) {
+        friendMessageId += idSymbols[Math.floor(Math.random() * idSymbols.length)];
+      }
+
       setTimeout(function () {
+        sendRequestPost('http://localhost:3000/messages', friendMessageId, sessionStorage.getItem('friend_id'), messageThread, friendSays, new Date())
+          .then(data => console.log(data))
+          .catch(error => console.log(error));
         document.querySelector('.messaging_content_left').insertAdjacentHTML('beforeEnd', `
         <div class="messaging_content_left_comment">
           <div class="messaging_content_left-avatar"></div>
           <div class="messaging_content_left_content">
-            <p class="messaging_content_left-message">${friendSays}</p>
+            <p class="messaging_content_left-message">${friendSays.length > 0 ? friendSays : '...'}</p>
             <p class="messaging_content_left-date">${myDate.getDate() + ' ' + months[myDate.getMonth()] + ' ' + myDate.getFullYear() + ', ' + myDate.getHours() + ':' + myDate.getMinutes()}</p>
           </div>
         </div>
         `);
       }, friendSaysTime);
+
 
 
       document.querySelector('#messageInput').value = '';

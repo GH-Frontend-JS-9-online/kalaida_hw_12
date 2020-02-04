@@ -298,6 +298,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 90px;
+        &No {
+          opacity: 0;
+        }
       }
       &-avatar {
         width: 56px;
@@ -576,6 +579,12 @@
       width: 70%;
     }
   }
+  .conversations {
+    width: 100%;
+  }
+  .messaging {
+    width: 100%;
+  }
 }
 
 @media(min-width: 644px) and (max-width: 780px) {
@@ -636,6 +645,41 @@
   }
 }
 
+@media(min-width: 320px) and (max-width: 518px) {
+  .messaging_content_left {
+    &_comment {
+      margin-left: 10px;
+    }
+    &-avatar {
+      width: 40px;
+      height: 40px;
+    }
+    &-message {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    &-date {
+      font-size: 10px;
+    }
+  }
+  .messaging_content_right {
+    &_comment {
+      margin-right: 10px;
+    }
+    &-avatar {
+      width: 40px;
+      height: 40px;
+    }
+    &-message {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    &-date {
+      font-size: 10px;
+    }
+  }
+}
+
 @media(min-width: 320px) and (max-width: 460px) {
   .messagesHeader {
     &_right {
@@ -669,6 +713,86 @@
       &-filterText {
         margin-right: 10px;
       }
+    }
+  }
+}
+
+@media(min-width: 362px) and (max-width: 410px) {
+  .messaging_content_left {
+    &_comment {
+      margin-left: 10px;
+    }
+    &-avatar {
+      width: 35px;
+      height: 35px;
+    }
+    &-message {
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    &-date {
+      font-size: 8px;
+    }
+  }
+  .messaging_content_right {
+    &_comment {
+      margin-right: 10px;
+    }
+    &-avatar {
+      width: 35px;
+      height: 35px;
+    }
+    &-message {
+      font-size: 10px;
+      margin-right: 10px;
+    }
+    &-date {
+      font-size: 8px;
+    }
+  }
+}
+
+@media(min-width: 320px) and (max-width: 361px) {
+  .messaging_content_left {
+    &_comment {
+      margin-left: 10px;
+    }
+    &-avatar {
+      width: 30px;
+      height: 30px;
+    }
+    &-message {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    &-date {
+      font-size: 8px;
+      margin-left: 15px;
+    }
+  }
+  .messaging_content_right {
+    &_comment {
+      margin-right: 10px;
+    }
+    &-avatar {
+      width: 30px;
+      height: 30px;
+    }
+    &-message {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 10px;
+      margin-right: 10px;
+    }
+    &-date {
+      font-size: 8px;
+      margin-right: 10px;
     }
   }
 }
